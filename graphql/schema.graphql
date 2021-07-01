@@ -1,0 +1,81 @@
+scalar Date
+        scalar IntString
+        scalar FloatString
+
+        type Query {
+                getMeasurement(id: ID!): Measurement
+                getMeasurmentsLatest(page: Int): [Measurement]
+		getRecentRecordsBySignature(signature: String!, amount: Int!): [Measurement]
+                getMeasurementFromDates(from: String!, till: String!, page: Int): [Measurement]
+                getMeasurementFromDatesBySignature(from: String!, till: String!, id: String!, page: Int): [Measurement]
+                getEnergyFromDatesBySignature(from: String!, till: String!, id: String!): [Measurement]
+		getJWT: String
+		getAvailableMeters: [String]
+		
+        }
+
+        type Measurement {
+                id: ID!
+                signature: String
+                p1_decoded: P1_decoded
+                s0: Extra
+                s1: Extra
+                createdAt: String
+        }
+
+        type Delivered {
+                value: Float
+                unit: String
+        }
+        type Received {
+                value: Float
+                unit: String
+        }
+
+        type P1_decoded {
+                manufacturer: String
+                version: String
+                equipment_id: String
+                tariff: Int
+                power: DeliveredAndReceived
+                energy: [Energy]
+                phases: Phases
+        }
+
+        type DeliveredAndReceived {
+                delivered: Delivered,
+                received: Received
+        }
+
+        type Phases {
+                failures: IntString
+                long_failures: IntString
+                phases: [Phase]
+        }
+
+        type Phase {
+                phase: IntString
+                sags: IntString
+                swells: IntString
+                instantaneous_voltage: Instant
+                instantaneous_current: Instant
+                instantaneous_power_positive: Instant
+                instantaneous_power_negative: Instant
+        }
+
+        type Instant {
+                value: FloatString
+                unit: String
+        }
+
+        type Energy {
+                tariff: Int
+                delivered: Delivered
+                received: Received
+        }
+
+        type Extra {
+                unit: String
+                label: String
+                value: Float
+        }

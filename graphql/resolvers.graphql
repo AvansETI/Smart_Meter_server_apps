@@ -1,0 +1,77 @@
+IntString: new GraphQLScalarType({
+                name: 'IntString',
+                serialize: coerceIntString,
+                parseValue: coerceIntString,
+                parseLiteral(ast) {
+                  if (ast.kind === Kind.INT) {
+                        return coerceIntString(parseInt(ast.value, 10))
+                  }
+                  if (ast.kind === Kind.STRING) {
+                        return ast.value
+                  }
+                  return undefined
+                }
+          }),
+          FloatString: new GraphQLScalarType({
+                name: 'FloatString',
+                serialize: coerceFloatString,
+                parseValue: coerceFloatString,
+                parseLiteral(ast) {
+                  if (ast.kind === Kind.FLOAT) {
+                        return coerceFloatString(parseFloat(ast.value))
+                  }
+                  if (ast.kind === Kind.STRING) {
+                        return ast.value
+                  }
+                  return undefined
+                }
+          }),
+        Measurement: {
+                createdAt(obj, args, context, info) {
+                        return new Date(obj.createdAt).toISOString()
+                }
+        },
+        Delivered: {
+                value(obj, args, context, info){
+                        return parseFloat(obj.value.toString())
+                }
+        },
+        Received: {
+                value(obj, args, context, info){
+                        return parseFloat(obj.value.toString())
+                }
+        },
+    Query: {
+                getMeasurement: async (_,{id}) => {
+                        var result = await mongooseschema.findById(id);
+                        return result;
+                },
+                getMeasurmentsLatest: async(_,{page}) => {
+                        if(page === null){ page = 1 }
+                        var documents = 100
+                        if(page < 1){
+                                page = 1
+                        }
+                        return await mongooseschema.find({"createdAt":{$gte:new Date((new Date().getTime() - (24 * 60 * 60 * 1000)))}}).skip((page-1)*documents).limit(documents)
+                },
+                getMeasurementFromDates: async(_,{from, till, page}) => {
+                        var documents = 100
+                        if(page < 1){
+                                page = 1
+                        }
+                        return await mongooseschema.find({"createdAt":{$gt:new Date(from).toUTCString(), $lt:new Date(till).toUTCString()}}).skip((page-1)*documents).limit(documents)
+                },
+                getMeasurementFromDatesBySignature: async(_,{from, till, id, page}) => {
+                        var documents = 100
+                        if(page < 1){
+                                page = 1
+                        }
+                        return await mongooseschema.find({"signature":id,"createdAt":{$gt:new Date(from).toUTCString(), $lt:new Date(till).toUTCString()}}).skip((page-1)*documents).limit(documents)
+                },
+                getJWT: async() => {
+                        const token = jwt.sign({ claims: 'read-post', exp: Math.floor(Date.now() / 1000) + (60 * 60 * 24 * 30)}, 'URaiLP26Vq', {
+                                algorithm: 'HS256',
+                        });
+                        return token;
+                }
+          }
