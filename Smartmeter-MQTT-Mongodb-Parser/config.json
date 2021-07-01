@@ -1,0 +1,20 @@
+{
+  "mqtt" : {
+    "host" : "sendlab.nl",
+    "port": 11884,
+    "topic": "smartmeter/raw",
+    "username" : "smartmeter_admin",
+    "password" : "EbRZ3V"
+  },
+  "logger" : {
+    "update_rate": 10
+  },
+  "mongodb" : {
+    "database": "mqqttest",
+    "username": "",
+    "password": "",
+    "host": "127.0.0.1",
+    "port": 27017
+  }
+
+}
