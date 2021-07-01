@@ -1,0 +1,758 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--no-audit',
+1 verbose cli   '--no-update-notifier',
+1 verbose cli   '--no-fund',
+1 verbose cli   '--save',
+1 verbose cli   '--save-prefix=~',
+1 verbose cli   '--production',
+1 verbose cli   'node-red-contrib-audio@1.0.2' ]
+2 info using npm@6.14.12
+3 info using node@v10.24.1
+4 verbose npm-session 7ecfdf17d22488f9
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-audio 856ms
+8 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-audio/-/node-red-contrib-audio-1.0.2.tgz 84ms
+9 silly pacote version manifest for node-red-contrib-audio@1.0.2 fetched in 961ms
+10 timing stage:loadCurrentTree Completed in 1365ms
+11 silly install loadIdealTree
+12 silly install cloneCurrentTreeToIdealTree
+13 timing stage:loadIdealTree:cloneCurrentTree Completed in 3ms
+14 silly install loadShrinkwrap
+15 timing stage:loadIdealTree:loadShrinkwrap Completed in 152ms
+16 silly install loadAllDepsIntoIdealTree
+17 silly resolveWithNewModule node-red-contrib-audio@1.0.2 checking installable status
+18 http fetch GET 200 https://registry.npmjs.org/speaker 97ms
+19 http fetch GET 200 https://registry.npmjs.org/speaker/-/speaker-0.3.1.tgz 170ms
+20 silly pacote range manifest for speaker@^0.3.0 fetched in 283ms
+21 silly resolveWithNewModule speaker@0.3.1 checking installable status
+22 http fetch GET 200 https://registry.npmjs.org/lame 765ms
+23 http fetch GET 200 https://registry.npmjs.org/lame/-/lame-1.2.4.tgz 421ms
+24 silly pacote range manifest for lame@^1.2.4 fetched in 1194ms
+25 silly resolveWithNewModule lame@1.2.4 checking installable status
+26 http fetch GET 200 https://registry.npmjs.org/bindings 56ms
+27 http fetch GET 200 https://registry.npmjs.org/nan 74ms
+28 http fetch GET 200 https://registry.npmjs.org/readable-stream 103ms
+29 http fetch GET 200 https://registry.npmjs.org/bindings/-/bindings-1.5.0.tgz 48ms
+30 silly pacote range manifest for bindings@^1.2.1 fetched in 117ms
+31 silly resolveWithNewModule bindings@1.5.0 checking installable status
+32 http fetch GET 200 https://registry.npmjs.org/nan/-/nan-2.14.2.tgz 63ms
+33 http fetch GET 200 https://registry.npmjs.org/readable-stream/-/readable-stream-1.1.14.tgz 46ms
+34 silly pacote range manifest for nan@^2.3.5 fetched in 158ms
+35 silly resolveWithNewModule nan@2.14.2 checking installable status
+36 silly pacote range manifest for readable-stream@^1.0.34 fetched in 162ms
+37 silly resolveWithNewModule readable-stream@1.1.14 checking installable status
+38 http fetch GET 200 https://registry.npmjs.org/file-uri-to-path 43ms
+39 http fetch GET 200 https://registry.npmjs.org/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz 46ms
+40 silly pacote version manifest for file-uri-to-path@1.0.0 fetched in 99ms
+41 silly resolveWithNewModule file-uri-to-path@1.0.0 checking installable status
+42 http fetch GET 200 https://registry.npmjs.org/core-util-is 83ms
+43 http fetch GET 200 https://registry.npmjs.org/string_decoder 89ms
+44 http fetch GET 200 https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz 51ms
+45 http fetch GET 200 https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz 59ms
+46 http fetch GET 304 https://registry.npmjs.org/isarray 159ms (from cache)
+47 silly pacote range manifest for string_decoder@~0.10.x fetched in 161ms
+48 silly resolveWithNewModule string_decoder@0.10.31 checking installable status
+49 silly pacote range manifest for core-util-is@~1.0.0 fetched in 163ms
+50 silly resolveWithNewModule core-util-is@1.0.2 checking installable status
+51 http fetch GET 200 https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz 38ms
+52 silly pacote version manifest for isarray@0.0.1 fetched in 209ms
+53 silly resolveWithNewModule isarray@0.0.1 checking installable status
+54 http fetch GET 200 https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.7.tgz 39ms
+55 silly pacote range manifest for readable-stream@^2.0.5 fetched in 47ms
+56 silly resolveWithNewModule readable-stream@2.3.7 checking installable status
+57 http fetch GET 200 https://registry.npmjs.org/process-nextick-args 47ms
+58 http fetch GET 200 https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz 50ms
+59 http fetch GET 200 https://registry.npmjs.org/util-deprecate 58ms
+60 silly pacote range manifest for isarray@~1.0.0 fetched in 67ms
+61 silly resolveWithNewModule isarray@1.0.0 checking installable status
+62 http fetch GET 200 https://registry.npmjs.org/string_decoder/-/string_decoder-1.1.1.tgz 69ms
+63 silly pacote range manifest for string_decoder@~1.1.1 fetched in 82ms
+64 silly resolveWithNewModule string_decoder@1.1.1 checking installable status
+65 http fetch GET 200 https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz 49ms
+66 http fetch GET 200 https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz 41ms
+67 silly pacote range manifest for process-nextick-args@~2.0.0 fetched in 107ms
+68 silly resolveWithNewModule process-nextick-args@2.0.1 checking installable status
+69 silly pacote range manifest for util-deprecate@~1.0.1 fetched in 109ms
+70 silly resolveWithNewModule util-deprecate@1.0.2 checking installable status
+71 timing stage:loadIdealTree:loadAllDepsIntoIdealTree Completed in 2078ms
+72 timing stage:loadIdealTree Completed in 2335ms
+73 silly currentTree node-red-project@0.0.1
+73 silly currentTree +-- accepts@1.3.7
+73 silly currentTree +-- after@0.8.2
+73 silly currentTree +-- arraybuffer.slice@0.0.7
+73 silly currentTree +-- async@1.5.2
+73 silly currentTree +-- axios@0.18.1
+73 silly currentTree +-- backo2@1.0.2
+73 silly currentTree +-- base64-arraybuffer@0.1.4
+73 silly currentTree +-- base64id@2.0.0
+73 silly currentTree +-- blob@0.0.5
+73 silly currentTree +-- bytes@3.0.0
+73 silly currentTree +-- component-bind@1.0.0
+73 silly currentTree +-- component-emitter@1.3.0
+73 silly currentTree +-- component-inherit@0.0.3
+73 silly currentTree +-- compressible@2.0.18
+73 silly currentTree +-- compression@1.7.4
+73 silly currentTree +-- cookie@0.4.1
+73 silly currentTree +-- debug@2.6.9
+73 silly currentTree +-- depd@1.1.2
+73 silly currentTree +-- destroy@1.0.4
+73 silly currentTree +-- ee-first@1.1.1
+73 silly currentTree +-- encodeurl@1.0.2
+73 silly currentTree +-- engine.io-client@3.5.2
+73 silly currentTree | `-- debug@3.1.0
+73 silly currentTree +-- engine.io-parser@2.2.1
+73 silly currentTree +-- engine.io@3.5.0
+73 silly currentTree | +-- debug@4.1.1
+73 silly currentTree | `-- ms@2.1.3
+73 silly currentTree +-- escape-html@1.0.3
+73 silly currentTree +-- etag@1.8.1
+73 silly currentTree +-- follow-redirects@1.5.10
+73 silly currentTree | `-- debug@3.1.0
+73 silly currentTree +-- formidable@1.2.2
+73 silly currentTree +-- fresh@0.5.2
+73 silly currentTree +-- gridstack@0.6.4
+73 silly currentTree +-- has-binary2@1.0.3
+73 silly currentTree +-- has-cors@1.1.0
+73 silly currentTree +-- http-errors@1.7.3
+73 silly currentTree +-- indexof@0.0.1
+73 silly currentTree +-- inherits@2.0.4
+73 silly currentTree +-- is-buffer@2.0.5
+73 silly currentTree +-- isarray@2.0.1
+73 silly currentTree +-- jquery@3.6.0
+73 silly currentTree +-- mime-db@1.47.0
+73 silly currentTree +-- mime-types@2.1.30
+73 silly currentTree +-- mime@1.6.0
+73 silly currentTree +-- minimist@1.2.5
+73 silly currentTree +-- mkdirp@0.5.5
+73 silly currentTree +-- ms@2.0.0
+73 silly currentTree +-- mustache@2.3.2
+73 silly currentTree +-- negotiator@0.6.2
+73 silly currentTree +-- node-red-contrib-graphql@0.2.5
+73 silly currentTree +-- node-red-contrib-play-audio-file@0.0.1
+73 silly currentTree +-- node-red-contrib-ui-media@1.2.0
+73 silly currentTree +-- node-red-dashboard@2.29.0
+73 silly currentTree +-- on-finished@2.3.0
+73 silly currentTree +-- on-headers@1.0.2
+73 silly currentTree +-- parseqs@0.0.6
+73 silly currentTree +-- parseuri@0.0.6
+73 silly currentTree +-- parseurl@1.3.3
+73 silly currentTree +-- range-parser@1.2.1
+73 silly currentTree +-- safe-buffer@5.1.2
+73 silly currentTree +-- send@0.17.1
+73 silly currentTree | `-- ms@2.1.1
+73 silly currentTree +-- serve-static@1.14.1
+73 silly currentTree +-- setprototypeof@1.1.1
+73 silly currentTree +-- socket.io-adapter@1.1.2
+73 silly currentTree +-- socket.io-client@2.4.0
+73 silly currentTree | +-- debug@3.1.0
+73 silly currentTree | `-- socket.io-parser@3.3.2
+73 silly currentTree +-- socket.io-parser@3.4.1
+73 silly currentTree | +-- component-emitter@1.2.1
+73 silly currentTree | +-- debug@4.1.1
+73 silly currentTree | `-- ms@2.1.3
+73 silly currentTree +-- socket.io@2.4.1
+73 silly currentTree | +-- debug@4.1.1
+73 silly currentTree | `-- ms@2.1.3
+73 silly currentTree +-- soundplayer@1.1.1
+73 silly currentTree | +-- debug@2.2.0
+73 silly currentTree | +-- mime@1.3.6
+73 silly currentTree | `-- ms@0.7.1
+73 silly currentTree +-- statuses@1.5.0
+73 silly currentTree +-- to-array@0.1.4
+73 silly currentTree +-- toidentifier@1.0.0
+73 silly currentTree +-- uuid@2.0.3
+73 silly currentTree +-- vary@1.1.2
+73 silly currentTree +-- ws@7.4.5
+73 silly currentTree +-- xmlhttprequest-ssl@1.6.3
+73 silly currentTree `-- yeast@0.1.2
+74 silly idealTree node-red-project@0.0.1
+74 silly idealTree +-- accepts@1.3.7
+74 silly idealTree +-- after@0.8.2
+74 silly idealTree +-- arraybuffer.slice@0.0.7
+74 silly idealTree +-- async@1.5.2
+74 silly idealTree +-- axios@0.18.1
+74 silly idealTree +-- backo2@1.0.2
+74 silly idealTree +-- base64-arraybuffer@0.1.4
+74 silly idealTree +-- base64id@2.0.0
+74 silly idealTree +-- bindings@1.5.0
+74 silly idealTree +-- blob@0.0.5
+74 silly idealTree +-- bytes@3.0.0
+74 silly idealTree +-- component-bind@1.0.0
+74 silly idealTree +-- component-emitter@1.3.0
+74 silly idealTree +-- component-inherit@0.0.3
+74 silly idealTree +-- compressible@2.0.18
+74 silly idealTree +-- compression@1.7.4
+74 silly idealTree +-- cookie@0.4.1
+74 silly idealTree +-- core-util-is@1.0.2
+74 silly idealTree +-- debug@2.6.9
+74 silly idealTree +-- depd@1.1.2
+74 silly idealTree +-- destroy@1.0.4
+74 silly idealTree +-- ee-first@1.1.1
+74 silly idealTree +-- encodeurl@1.0.2
+74 silly idealTree +-- engine.io-client@3.5.2
+74 silly idealTree | `-- debug@3.1.0
+74 silly idealTree +-- engine.io-parser@2.2.1
+74 silly idealTree +-- engine.io@3.5.0
+74 silly idealTree | +-- debug@4.1.1
+74 silly idealTree | `-- ms@2.1.3
+74 silly idealTree +-- escape-html@1.0.3
+74 silly idealTree +-- etag@1.8.1
+74 silly idealTree +-- file-uri-to-path@1.0.0
+74 silly idealTree +-- follow-redirects@1.5.10
+74 silly idealTree | `-- debug@3.1.0
+74 silly idealTree +-- formidable@1.2.2
+74 silly idealTree +-- fresh@0.5.2
+74 silly idealTree +-- gridstack@0.6.4
+74 silly idealTree +-- has-binary2@1.0.3
+74 silly idealTree +-- has-cors@1.1.0
+74 silly idealTree +-- http-errors@1.7.3
+74 silly idealTree +-- indexof@0.0.1
+74 silly idealTree +-- inherits@2.0.4
+74 silly idealTree +-- is-buffer@2.0.5
+74 silly idealTree +-- isarray@2.0.1
+74 silly idealTree +-- jquery@3.6.0
+74 silly idealTree +-- lame@1.2.4
+74 silly idealTree +-- mime-db@1.47.0
+74 silly idealTree +-- mime-types@2.1.30
+74 silly idealTree +-- mime@1.6.0
+74 silly idealTree +-- minimist@1.2.5
+74 silly idealTree +-- mkdirp@0.5.5
+74 silly idealTree +-- ms@2.0.0
+74 silly idealTree +-- mustache@2.3.2
+74 silly idealTree +-- nan@2.14.2
+74 silly idealTree +-- negotiator@0.6.2
+74 silly idealTree +-- node-red-contrib-audio@1.0.2
+74 silly idealTree +-- node-red-contrib-graphql@0.2.5
+74 silly idealTree +-- node-red-contrib-play-audio-file@0.0.1
+74 silly idealTree +-- node-red-contrib-ui-media@1.2.0
+74 silly idealTree +-- node-red-dashboard@2.29.0
+74 silly idealTree +-- on-finished@2.3.0
+74 silly idealTree +-- on-headers@1.0.2
+74 silly idealTree +-- parseqs@0.0.6
+74 silly idealTree +-- parseuri@0.0.6
+74 silly idealTree +-- parseurl@1.3.3
+74 silly idealTree +-- process-nextick-args@2.0.1
+74 silly idealTree +-- range-parser@1.2.1
+74 silly idealTree +-- readable-stream@1.1.14
+74 silly idealTree | `-- isarray@0.0.1
+74 silly idealTree +-- safe-buffer@5.1.2
+74 silly idealTree +-- send@0.17.1
+74 silly idealTree | `-- ms@2.1.1
+74 silly idealTree +-- serve-static@1.14.1
+74 silly idealTree +-- setprototypeof@1.1.1
+74 silly idealTree +-- socket.io-adapter@1.1.2
+74 silly idealTree +-- socket.io-client@2.4.0
+74 silly idealTree | +-- debug@3.1.0
+74 silly idealTree | `-- socket.io-parser@3.3.2
+74 silly idealTree +-- socket.io-parser@3.4.1
+74 silly idealTree | +-- component-emitter@1.2.1
+74 silly idealTree | +-- debug@4.1.1
+74 silly idealTree | `-- ms@2.1.3
+74 silly idealTree +-- socket.io@2.4.1
+74 silly idealTree | +-- debug@4.1.1
+74 silly idealTree | `-- ms@2.1.3
+74 silly idealTree +-- soundplayer@1.1.1
+74 silly idealTree | +-- debug@2.2.0
+74 silly idealTree | +-- mime@1.3.6
+74 silly idealTree | `-- ms@0.7.1
+74 silly idealTree +-- speaker@0.3.1
+74 silly idealTree | +-- isarray@1.0.0
+74 silly idealTree | +-- readable-stream@2.3.7
+74 silly idealTree | `-- string_decoder@1.1.1
+74 silly idealTree +-- statuses@1.5.0
+74 silly idealTree +-- string_decoder@0.10.31
+74 silly idealTree +-- to-array@0.1.4
+74 silly idealTree +-- toidentifier@1.0.0
+74 silly idealTree +-- util-deprecate@1.0.2
+74 silly idealTree +-- uuid@2.0.3
+74 silly idealTree +-- vary@1.1.2
+74 silly idealTree +-- ws@7.4.5
+74 silly idealTree +-- xmlhttprequest-ssl@1.6.3
+74 silly idealTree `-- yeast@0.1.2
+75 silly install generateActionsToTake
+76 silly diff-trees filtering actions: includeDev false includeProd true includeOpt true
+77 timing stage:generateActionsToTake Completed in 29ms
+78 silly diffTrees action count 15
+79 silly diffTrees add core-util-is@1.0.2
+80 silly diffTrees add file-uri-to-path@1.0.0
+81 silly diffTrees add bindings@1.5.0
+82 silly diffTrees add nan@2.14.2
+83 silly diffTrees add process-nextick-args@2.0.1
+84 silly diffTrees add isarray@0.0.1
+85 silly diffTrees add isarray@1.0.0
+86 silly diffTrees add string_decoder@1.1.1
+87 silly diffTrees add string_decoder@0.10.31
+88 silly diffTrees add readable-stream@1.1.14
+89 silly diffTrees add util-deprecate@1.0.2
+90 silly diffTrees add readable-stream@2.3.7
+91 silly diffTrees add lame@1.2.4
+92 silly diffTrees add speaker@0.3.1
+93 silly diffTrees add node-red-contrib-audio@1.0.2
+94 silly decomposeActions action count 120
+95 silly decomposeActions fetch core-util-is@1.0.2
+96 silly decomposeActions extract core-util-is@1.0.2
+97 silly decomposeActions preinstall core-util-is@1.0.2
+98 silly decomposeActions build core-util-is@1.0.2
+99 silly decomposeActions install core-util-is@1.0.2
+100 silly decomposeActions postinstall core-util-is@1.0.2
+101 silly decomposeActions finalize core-util-is@1.0.2
+102 silly decomposeActions refresh-package-json core-util-is@1.0.2
+103 silly decomposeActions fetch file-uri-to-path@1.0.0
+104 silly decomposeActions extract file-uri-to-path@1.0.0
+105 silly decomposeActions preinstall file-uri-to-path@1.0.0
+106 silly decomposeActions build file-uri-to-path@1.0.0
+107 silly decomposeActions install file-uri-to-path@1.0.0
+108 silly decomposeActions postinstall file-uri-to-path@1.0.0
+109 silly decomposeActions finalize file-uri-to-path@1.0.0
+110 silly decomposeActions refresh-package-json file-uri-to-path@1.0.0
+111 silly decomposeActions fetch bindings@1.5.0
+112 silly decomposeActions extract bindings@1.5.0
+113 silly decomposeActions preinstall bindings@1.5.0
+114 silly decomposeActions build bindings@1.5.0
+115 silly decomposeActions install bindings@1.5.0
+116 silly decomposeActions postinstall bindings@1.5.0
+117 silly decomposeActions finalize bindings@1.5.0
+118 silly decomposeActions refresh-package-json bindings@1.5.0
+119 silly decomposeActions fetch nan@2.14.2
+120 silly decomposeActions extract nan@2.14.2
+121 silly decomposeActions preinstall nan@2.14.2
+122 silly decomposeActions build nan@2.14.2
+123 silly decomposeActions install nan@2.14.2
+124 silly decomposeActions postinstall nan@2.14.2
+125 silly decomposeActions finalize nan@2.14.2
+126 silly decomposeActions refresh-package-json nan@2.14.2
+127 silly decomposeActions fetch process-nextick-args@2.0.1
+128 silly decomposeActions extract process-nextick-args@2.0.1
+129 silly decomposeActions preinstall process-nextick-args@2.0.1
+130 silly decomposeActions build process-nextick-args@2.0.1
+131 silly decomposeActions install process-nextick-args@2.0.1
+132 silly decomposeActions postinstall process-nextick-args@2.0.1
+133 silly decomposeActions finalize process-nextick-args@2.0.1
+134 silly decomposeActions refresh-package-json process-nextick-args@2.0.1
+135 silly decomposeActions fetch isarray@0.0.1
+136 silly decomposeActions extract isarray@0.0.1
+137 silly decomposeActions preinstall isarray@0.0.1
+138 silly decomposeActions build isarray@0.0.1
+139 silly decomposeActions install isarray@0.0.1
+140 silly decomposeActions postinstall isarray@0.0.1
+141 silly decomposeActions finalize isarray@0.0.1
+142 silly decomposeActions refresh-package-json isarray@0.0.1
+143 silly decomposeActions fetch isarray@1.0.0
+144 silly decomposeActions extract isarray@1.0.0
+145 silly decomposeActions preinstall isarray@1.0.0
+146 silly decomposeActions build isarray@1.0.0
+147 silly decomposeActions install isarray@1.0.0
+148 silly decomposeActions postinstall isarray@1.0.0
+149 silly decomposeActions finalize isarray@1.0.0
+150 silly decomposeActions refresh-package-json isarray@1.0.0
+151 silly decomposeActions fetch string_decoder@1.1.1
+152 silly decomposeActions extract string_decoder@1.1.1
+153 silly decomposeActions preinstall string_decoder@1.1.1
+154 silly decomposeActions build string_decoder@1.1.1
+155 silly decomposeActions install string_decoder@1.1.1
+156 silly decomposeActions postinstall string_decoder@1.1.1
+157 silly decomposeActions finalize string_decoder@1.1.1
+158 silly decomposeActions refresh-package-json string_decoder@1.1.1
+159 silly decomposeActions fetch string_decoder@0.10.31
+160 silly decomposeActions extract string_decoder@0.10.31
+161 silly decomposeActions preinstall string_decoder@0.10.31
+162 silly decomposeActions build string_decoder@0.10.31
+163 silly decomposeActions install string_decoder@0.10.31
+164 silly decomposeActions postinstall string_decoder@0.10.31
+165 silly decomposeActions finalize string_decoder@0.10.31
+166 silly decomposeActions refresh-package-json string_decoder@0.10.31
+167 silly decomposeActions fetch readable-stream@1.1.14
+168 silly decomposeActions extract readable-stream@1.1.14
+169 silly decomposeActions preinstall readable-stream@1.1.14
+170 silly decomposeActions build readable-stream@1.1.14
+171 silly decomposeActions install readable-stream@1.1.14
+172 silly decomposeActions postinstall readable-stream@1.1.14
+173 silly decomposeActions finalize readable-stream@1.1.14
+174 silly decomposeActions refresh-package-json readable-stream@1.1.14
+175 silly decomposeActions fetch util-deprecate@1.0.2
+176 silly decomposeActions extract util-deprecate@1.0.2
+177 silly decomposeActions preinstall util-deprecate@1.0.2
+178 silly decomposeActions build util-deprecate@1.0.2
+179 silly decomposeActions install util-deprecate@1.0.2
+180 silly decomposeActions postinstall util-deprecate@1.0.2
+181 silly decomposeActions finalize util-deprecate@1.0.2
+182 silly decomposeActions refresh-package-json util-deprecate@1.0.2
+183 silly decomposeActions fetch readable-stream@2.3.7
+184 silly decomposeActions extract readable-stream@2.3.7
+185 silly decomposeActions preinstall readable-stream@2.3.7
+186 silly decomposeActions build readable-stream@2.3.7
+187 silly decomposeActions install readable-stream@2.3.7
+188 silly decomposeActions postinstall readable-stream@2.3.7
+189 silly decomposeActions finalize readable-stream@2.3.7
+190 silly decomposeActions refresh-package-json readable-stream@2.3.7
+191 silly decomposeActions fetch lame@1.2.4
+192 silly decomposeActions extract lame@1.2.4
+193 silly decomposeActions preinstall lame@1.2.4
+194 silly decomposeActions build lame@1.2.4
+195 silly decomposeActions install lame@1.2.4
+196 silly decomposeActions postinstall lame@1.2.4
+197 silly decomposeActions finalize lame@1.2.4
+198 silly decomposeActions refresh-package-json lame@1.2.4
+199 silly decomposeActions fetch speaker@0.3.1
+200 silly decomposeActions extract speaker@0.3.1
+201 silly decomposeActions preinstall speaker@0.3.1
+202 silly decomposeActions build speaker@0.3.1
+203 silly decomposeActions install speaker@0.3.1
+204 silly decomposeActions postinstall speaker@0.3.1
+205 silly decomposeActions finalize speaker@0.3.1
+206 silly decomposeActions refresh-package-json speaker@0.3.1
+207 silly decomposeActions fetch node-red-contrib-audio@1.0.2
+208 silly decomposeActions extract node-red-contrib-audio@1.0.2
+209 silly decomposeActions preinstall node-red-contrib-audio@1.0.2
+210 silly decomposeActions build node-red-contrib-audio@1.0.2
+211 silly decomposeActions install node-red-contrib-audio@1.0.2
+212 silly decomposeActions postinstall node-red-contrib-audio@1.0.2
+213 silly decomposeActions finalize node-red-contrib-audio@1.0.2
+214 silly decomposeActions refresh-package-json node-red-contrib-audio@1.0.2
+215 silly install executeActions
+216 silly doSerial global-install 120
+217 verbose correctMkdir /data/.npm/_locks correctMkdir not in flight; initializing
+218 verbose lock using /data/.npm/_locks/staging-accc372ed0ccb0d8.lock for /data/node_modules/.staging
+219 silly doParallel extract 15
+220 silly extract core-util-is@1.0.2
+221 silly extract file-uri-to-path@1.0.0
+222 silly extract bindings@1.5.0
+223 silly extract nan@2.14.2
+224 silly extract process-nextick-args@2.0.1
+225 silly extract isarray@0.0.1
+226 silly extract isarray@1.0.0
+227 silly extract string_decoder@1.1.1
+228 silly extract string_decoder@0.10.31
+229 silly extract readable-stream@1.1.14
+230 silly extract util-deprecate@1.0.2
+231 silly extract readable-stream@2.3.7
+232 silly extract lame@1.2.4
+233 silly extract speaker@0.3.1
+234 silly extract node-red-contrib-audio@1.0.2
+235 silly tarball trying core-util-is@~1.0.0 by hash: sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
+236 silly tarball trying file-uri-to-path@1.0.0 by hash: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==
+237 silly tarball trying bindings@^1.2.1 by hash: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==
+238 silly tarball trying nan@^2.3.5 by hash: sha512-M2ufzIiINKCuDfBSAUr1vWQ+vuVcA9kqx8JJUsbQi6yf1uGRyb7HfpdfUr5qLXf3B/t8dPvcjhKMmlfnP47EzQ==
+239 silly tarball trying process-nextick-args@~2.0.0 by hash: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
+240 silly tarball trying isarray@0.0.1 by hash: sha1-ihis/Kmo9Bd+Cav8YDiTmwXR7t8=
+241 silly tarball trying isarray@~1.0.0 by hash: sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE=
+242 silly tarball trying string_decoder@~1.1.1 by hash: sha512-n/ShnvDi6FHbbVfviro+WojiFzv+s8MPMHBczVePfUpDJLwoLT0ht1l4YwBCbi8pJAveEEdnkHyPyTP/mzRfwg==
+243 silly tarball trying string_decoder@~0.10.x by hash: sha1-YuIDvEF2bGwoyfyEMB2rHFMQ+pQ=
+244 silly tarball trying readable-stream@^1.0.34 by hash: sha1-fPTFTvZI44EwhMY23SB54WbAgdk=
+245 silly tarball trying util-deprecate@~1.0.1 by hash: sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
+246 silly tarball trying readable-stream@^2.0.5 by hash: sha512-Ebho8K4jIbHAxnuxi7o42OrZgF/ZTNcsZj6nRKyUmkhLFq8CHItp/fy6hQZuZmP/n3yZ9VBUbp4zz/mX8hmYPw==
+247 silly tarball trying lame@^1.2.4 by hash: sha1-VGgBUU4t6MoMie7yIogMjcZxJIU=
+248 silly tarball trying speaker@^0.3.0 by hash: sha512-LEqSy+FHYHPZj4kX8NHylzaOmy+VIqj57enm2GS4B568hj0SdKDYa9jALCGQy43LZa/JmQk1iF0nlMVbS1PfPg==
+249 silly tarball trying node-red-contrib-audio@1.0.2 by hash: sha1-4JDdSkUHyr6J6rUtCRQDhaazGPM=
+250 silly extract bindings@^1.2.1 extracted to /data/node_modules/.staging/bindings-132d4d12 (105ms)
+251 silly extract process-nextick-args@~2.0.0 extracted to /data/node_modules/.staging/process-nextick-args-daa46cc0 (105ms)
+252 silly extract string_decoder@~0.10.x extracted to /data/node_modules/.staging/string_decoder-71738648 (110ms)
+253 silly extract isarray@0.0.1 extracted to /data/node_modules/.staging/isarray-640b28e2 (113ms)
+254 silly extract util-deprecate@~1.0.1 extracted to /data/node_modules/.staging/util-deprecate-881c81f5 (112ms)
+255 silly extract string_decoder@~1.1.1 extracted to /data/node_modules/.staging/string_decoder-2b2322d8 (114ms)
+256 silly extract core-util-is@~1.0.0 extracted to /data/node_modules/.staging/core-util-is-8d68de65 (116ms)
+257 silly extract isarray@~1.0.0 extracted to /data/node_modules/.staging/isarray-b2202dc8 (116ms)
+258 silly extract node-red-contrib-audio@1.0.2 extracted to /data/node_modules/.staging/node-red-contrib-audio-636a1560 (116ms)
+259 silly extract file-uri-to-path@1.0.0 extracted to /data/node_modules/.staging/file-uri-to-path-0e330468 (120ms)
+260 silly extract readable-stream@^1.0.34 extracted to /data/node_modules/.staging/readable-stream-b7037dff (156ms)
+261 silly extract readable-stream@^2.0.5 extracted to /data/node_modules/.staging/readable-stream-e9b8da62 (193ms)
+262 silly extract nan@^2.3.5 extracted to /data/node_modules/.staging/nan-dc18d45f (254ms)
+263 silly extract speaker@^0.3.0 extracted to /data/node_modules/.staging/speaker-1f379253 (559ms)
+264 silly extract lame@^1.2.4 extracted to /data/node_modules/.staging/lame-40d6d543 (984ms)
+265 timing action:extract Completed in 992ms
+266 silly doReverseSerial unbuild 120
+267 silly doSerial remove 120
+268 silly doSerial move 120
+269 silly doSerial finalize 120
+270 silly finalize /data/node_modules/core-util-is
+271 silly finalize /data/node_modules/file-uri-to-path
+272 silly finalize /data/node_modules/bindings
+273 silly finalize /data/node_modules/nan
+274 silly finalize /data/node_modules/process-nextick-args
+275 silly finalize /data/node_modules/readable-stream/node_modules/isarray
+276 silly finalize /data/node_modules/speaker/node_modules/isarray
+277 silly finalize /data/node_modules/speaker/node_modules/string_decoder
+278 silly finalize /data/node_modules/string_decoder
+279 silly finalize /data/node_modules/readable-stream
+280 silly finalize /data/node_modules/util-deprecate
+281 silly finalize /data/node_modules/speaker/node_modules/readable-stream
+282 silly finalize /data/node_modules/lame
+283 silly finalize /data/node_modules/speaker
+284 silly finalize /data/node_modules/node-red-contrib-audio
+285 timing action:finalize Completed in 39ms
+286 silly doParallel refresh-package-json 15
+287 silly refresh-package-json /data/node_modules/core-util-is
+288 silly refresh-package-json /data/node_modules/file-uri-to-path
+289 silly refresh-package-json /data/node_modules/bindings
+290 silly refresh-package-json /data/node_modules/nan
+291 silly refresh-package-json /data/node_modules/process-nextick-args
+292 silly refresh-package-json /data/node_modules/readable-stream/node_modules/isarray
+293 silly refresh-package-json /data/node_modules/speaker/node_modules/isarray
+294 silly refresh-package-json /data/node_modules/speaker/node_modules/string_decoder
+295 silly refresh-package-json /data/node_modules/string_decoder
+296 silly refresh-package-json /data/node_modules/readable-stream
+297 silly refresh-package-json /data/node_modules/util-deprecate
+298 silly refresh-package-json /data/node_modules/speaker/node_modules/readable-stream
+299 silly refresh-package-json /data/node_modules/lame
+300 silly refresh-package-json /data/node_modules/speaker
+301 silly refresh-package-json /data/node_modules/node-red-contrib-audio
+302 timing action:refresh-package-json Completed in 54ms
+303 silly doParallel preinstall 15
+304 silly preinstall core-util-is@1.0.2
+305 info lifecycle core-util-is@1.0.2~preinstall: core-util-is@1.0.2
+306 silly preinstall file-uri-to-path@1.0.0
+307 info lifecycle file-uri-to-path@1.0.0~preinstall: file-uri-to-path@1.0.0
+308 silly preinstall bindings@1.5.0
+309 info lifecycle bindings@1.5.0~preinstall: bindings@1.5.0
+310 silly preinstall nan@2.14.2
+311 info lifecycle nan@2.14.2~preinstall: nan@2.14.2
+312 silly preinstall process-nextick-args@2.0.1
+313 info lifecycle process-nextick-args@2.0.1~preinstall: process-nextick-args@2.0.1
+314 silly preinstall isarray@0.0.1
+315 info lifecycle isarray@0.0.1~preinstall: isarray@0.0.1
+316 silly preinstall isarray@1.0.0
+317 info lifecycle isarray@1.0.0~preinstall: isarray@1.0.0
+318 silly preinstall string_decoder@1.1.1
+319 info lifecycle string_decoder@1.1.1~preinstall: string_decoder@1.1.1
+320 silly preinstall string_decoder@0.10.31
+321 info lifecycle string_decoder@0.10.31~preinstall: string_decoder@0.10.31
+322 silly preinstall readable-stream@1.1.14
+323 info lifecycle readable-stream@1.1.14~preinstall: readable-stream@1.1.14
+324 silly preinstall util-deprecate@1.0.2
+325 info lifecycle util-deprecate@1.0.2~preinstall: util-deprecate@1.0.2
+326 silly preinstall readable-stream@2.3.7
+327 info lifecycle readable-stream@2.3.7~preinstall: readable-stream@2.3.7
+328 silly preinstall lame@1.2.4
+329 info lifecycle lame@1.2.4~preinstall: lame@1.2.4
+330 silly preinstall speaker@0.3.1
+331 info lifecycle speaker@0.3.1~preinstall: speaker@0.3.1
+332 silly preinstall node-red-contrib-audio@1.0.2
+333 info lifecycle node-red-contrib-audio@1.0.2~preinstall: node-red-contrib-audio@1.0.2
+334 timing action:preinstall Completed in 5ms
+335 silly doSerial build 120
+336 silly build core-util-is@1.0.2
+337 info linkStuff core-util-is@1.0.2
+338 silly linkStuff core-util-is@1.0.2 has /data/node_modules as its parent node_modules
+339 silly build file-uri-to-path@1.0.0
+340 info linkStuff file-uri-to-path@1.0.0
+341 silly linkStuff file-uri-to-path@1.0.0 has /data/node_modules as its parent node_modules
+342 silly build bindings@1.5.0
+343 info linkStuff bindings@1.5.0
+344 silly linkStuff bindings@1.5.0 has /data/node_modules as its parent node_modules
+345 silly build nan@2.14.2
+346 info linkStuff nan@2.14.2
+347 silly linkStuff nan@2.14.2 has /data/node_modules as its parent node_modules
+348 silly build process-nextick-args@2.0.1
+349 info linkStuff process-nextick-args@2.0.1
+350 silly linkStuff process-nextick-args@2.0.1 has /data/node_modules as its parent node_modules
+351 silly build isarray@0.0.1
+352 info linkStuff isarray@0.0.1
+353 silly linkStuff isarray@0.0.1 has /data/node_modules/readable-stream/node_modules as its parent node_modules
+354 silly build isarray@1.0.0
+355 info linkStuff isarray@1.0.0
+356 silly linkStuff isarray@1.0.0 has /data/node_modules/speaker/node_modules as its parent node_modules
+357 silly build string_decoder@1.1.1
+358 info linkStuff string_decoder@1.1.1
+359 silly linkStuff string_decoder@1.1.1 has /data/node_modules/speaker/node_modules as its parent node_modules
+360 silly build string_decoder@0.10.31
+361 info linkStuff string_decoder@0.10.31
+362 silly linkStuff string_decoder@0.10.31 has /data/node_modules as its parent node_modules
+363 silly build readable-stream@1.1.14
+364 info linkStuff readable-stream@1.1.14
+365 silly linkStuff readable-stream@1.1.14 has /data/node_modules as its parent node_modules
+366 silly build util-deprecate@1.0.2
+367 info linkStuff util-deprecate@1.0.2
+368 silly linkStuff util-deprecate@1.0.2 has /data/node_modules as its parent node_modules
+369 silly build readable-stream@2.3.7
+370 info linkStuff readable-stream@2.3.7
+371 silly linkStuff readable-stream@2.3.7 has /data/node_modules/speaker/node_modules as its parent node_modules
+372 silly build lame@1.2.4
+373 info linkStuff lame@1.2.4
+374 silly linkStuff lame@1.2.4 has /data/node_modules as its parent node_modules
+375 silly build speaker@0.3.1
+376 info linkStuff speaker@0.3.1
+377 silly linkStuff speaker@0.3.1 has /data/node_modules as its parent node_modules
+378 silly build node-red-contrib-audio@1.0.2
+379 info linkStuff node-red-contrib-audio@1.0.2
+380 silly linkStuff node-red-contrib-audio@1.0.2 has /data/node_modules as its parent node_modules
+381 timing action:build Completed in 5ms
+382 silly doSerial global-link 120
+383 silly doParallel update-linked 0
+384 silly doSerial install 120
+385 silly install core-util-is@1.0.2
+386 info lifecycle core-util-is@1.0.2~install: core-util-is@1.0.2
+387 silly install file-uri-to-path@1.0.0
+388 info lifecycle file-uri-to-path@1.0.0~install: file-uri-to-path@1.0.0
+389 silly install bindings@1.5.0
+390 info lifecycle bindings@1.5.0~install: bindings@1.5.0
+391 silly install nan@2.14.2
+392 info lifecycle nan@2.14.2~install: nan@2.14.2
+393 silly install process-nextick-args@2.0.1
+394 info lifecycle process-nextick-args@2.0.1~install: process-nextick-args@2.0.1
+395 silly install isarray@0.0.1
+396 info lifecycle isarray@0.0.1~install: isarray@0.0.1
+397 silly install isarray@1.0.0
+398 info lifecycle isarray@1.0.0~install: isarray@1.0.0
+399 silly install string_decoder@1.1.1
+400 info lifecycle string_decoder@1.1.1~install: string_decoder@1.1.1
+401 silly install string_decoder@0.10.31
+402 info lifecycle string_decoder@0.10.31~install: string_decoder@0.10.31
+403 silly install readable-stream@1.1.14
+404 info lifecycle readable-stream@1.1.14~install: readable-stream@1.1.14
+405 silly install util-deprecate@1.0.2
+406 info lifecycle util-deprecate@1.0.2~install: util-deprecate@1.0.2
+407 silly install readable-stream@2.3.7
+408 info lifecycle readable-stream@2.3.7~install: readable-stream@2.3.7
+409 silly install lame@1.2.4
+410 info lifecycle lame@1.2.4~install: lame@1.2.4
+411 verbose lifecycle lame@1.2.4~install: unsafe-perm in lifecycle true
+412 verbose lifecycle lame@1.2.4~install: PATH: /usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/data/node_modules/lame/node_modules/.bin:/data/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/usr/src/node-red/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+413 verbose lifecycle lame@1.2.4~install: CWD: /data/node_modules/lame
+414 silly lifecycle lame@1.2.4~install: Args: [ '-c', 'node-gyp rebuild' ]
+415 silly lifecycle lame@1.2.4~install: Returned: code: 0  signal: null
+416 silly install speaker@0.3.1
+417 info lifecycle speaker@0.3.1~install: speaker@0.3.1
+418 verbose lifecycle speaker@0.3.1~install: unsafe-perm in lifecycle true
+419 verbose lifecycle speaker@0.3.1~install: PATH: /usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/data/node_modules/speaker/node_modules/.bin:/data/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/usr/src/node-red/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+420 verbose lifecycle speaker@0.3.1~install: CWD: /data/node_modules/speaker
+421 silly lifecycle speaker@0.3.1~install: Args: [ '-c', 'node-gyp rebuild' ]
+422 silly lifecycle speaker@0.3.1~install: Returned: code: 1  signal: null
+423 info lifecycle speaker@0.3.1~install: Failed to exec install script
+424 timing action:install Completed in 48844ms
+425 verbose unlock done using /data/.npm/_locks/staging-accc372ed0ccb0d8.lock for /data/node_modules/.staging
+426 timing stage:rollbackFailedOptional Completed in 99ms
+427 timing stage:runTopLevelLifecycles Completed in 53791ms
+428 silly saveTree node-red-project@0.0.1
+428 silly saveTree +-- node-red-contrib-audio@1.0.2
+428 silly saveTree | +-- lame@1.2.4
+428 silly saveTree | | +-- bindings@1.5.0
+428 silly saveTree | | | `-- file-uri-to-path@1.0.0
+428 silly saveTree | | +-- debug@2.6.9
+428 silly saveTree | | | `-- ms@2.0.0
+428 silly saveTree | | +-- nan@2.14.2
+428 silly saveTree | | `-- readable-stream@1.1.14
+428 silly saveTree | |   +-- core-util-is@1.0.2
+428 silly saveTree | |   +-- inherits@2.0.4
+428 silly saveTree | |   +-- isarray@0.0.1
+428 silly saveTree | |   `-- string_decoder@0.10.31
+428 silly saveTree | `-- speaker@0.3.1
+428 silly saveTree |   `-- readable-stream@2.3.7
+428 silly saveTree |     +-- isarray@1.0.0
+428 silly saveTree |     +-- process-nextick-args@2.0.1
+428 silly saveTree |     +-- safe-buffer@5.1.2
+428 silly saveTree |     +-- string_decoder@1.1.1
+428 silly saveTree |     `-- util-deprecate@1.0.2
+428 silly saveTree +-- node-red-contrib-graphql@0.2.5
+428 silly saveTree | +-- axios@0.18.1
+428 silly saveTree | | +-- follow-redirects@1.5.10
+428 silly saveTree | | | `-- debug@3.1.0
+428 silly saveTree | | `-- is-buffer@2.0.5
+428 silly saveTree | `-- mustache@2.3.2
+428 silly saveTree +-- node-red-contrib-play-audio-file@0.0.1
+428 silly saveTree | `-- soundplayer@1.1.1
+428 silly saveTree |   +-- async@1.5.2
+428 silly saveTree |   +-- debug@2.2.0
+428 silly saveTree |   | `-- ms@0.7.1
+428 silly saveTree |   +-- mime@1.3.6
+428 silly saveTree |   `-- uuid@2.0.3
+428 silly saveTree +-- node-red-contrib-ui-media@1.2.0
+428 silly saveTree | +-- formidable@1.2.2
+428 silly saveTree | +-- mime-types@2.1.30
+428 silly saveTree | | `-- mime-db@1.47.0
+428 silly saveTree | `-- mkdirp@0.5.5
+428 silly saveTree |   `-- minimist@1.2.5
+428 silly saveTree `-- node-red-dashboard@2.29.0
+428 silly saveTree   +-- compression@1.7.4
+428 silly saveTree   | +-- accepts@1.3.7
+428 silly saveTree   | | `-- negotiator@0.6.2
+428 silly saveTree   | +-- bytes@3.0.0
+428 silly saveTree   | +-- compressible@2.0.18
+428 silly saveTree   | +-- on-headers@1.0.2
+428 silly saveTree   | `-- vary@1.1.2
+428 silly saveTree   +-- gridstack@0.6.4
+428 silly saveTree   | `-- jquery@3.6.0
+428 silly saveTree   +-- serve-static@1.14.1
+428 silly saveTree   | +-- encodeurl@1.0.2
+428 silly saveTree   | +-- escape-html@1.0.3
+428 silly saveTree   | +-- parseurl@1.3.3
+428 silly saveTree   | `-- send@0.17.1
+428 silly saveTree   |   +-- depd@1.1.2
+428 silly saveTree   |   +-- destroy@1.0.4
+428 silly saveTree   |   +-- etag@1.8.1
+428 silly saveTree   |   +-- fresh@0.5.2
+428 silly saveTree   |   +-- http-errors@1.7.3
+428 silly saveTree   |   | +-- setprototypeof@1.1.1
+428 silly saveTree   |   | +-- statuses@1.5.0
+428 silly saveTree   |   | `-- toidentifier@1.0.0
+428 silly saveTree   |   +-- mime@1.6.0
+428 silly saveTree   |   +-- ms@2.1.1
+428 silly saveTree   |   +-- on-finished@2.3.0
+428 silly saveTree   |   | `-- ee-first@1.1.1
+428 silly saveTree   |   +-- range-parser@1.2.1
+428 silly saveTree   |   `-- statuses@1.5.0
+428 silly saveTree   `-- socket.io@2.4.1
+428 silly saveTree     +-- debug@4.1.1
+428 silly saveTree     | `-- ms@2.1.3
+428 silly saveTree     +-- engine.io@3.5.0
+428 silly saveTree     | +-- base64id@2.0.0
+428 silly saveTree     | +-- cookie@0.4.1
+428 silly saveTree     | +-- debug@4.1.1
+428 silly saveTree     | | `-- ms@2.1.3
+428 silly saveTree     | +-- engine.io-parser@2.2.1
+428 silly saveTree     | | +-- after@0.8.2
+428 silly saveTree     | | +-- arraybuffer.slice@0.0.7
+428 silly saveTree     | | +-- base64-arraybuffer@0.1.4
+428 silly saveTree     | | +-- blob@0.0.5
+428 silly saveTree     | | `-- has-binary2@1.0.3
+428 silly saveTree     | |   `-- isarray@2.0.1
+428 silly saveTree     | `-- ws@7.4.5
+428 silly saveTree     +-- has-binary2@1.0.3
+428 silly saveTree     +-- socket.io-adapter@1.1.2
+428 silly saveTree     +-- socket.io-client@2.4.0
+428 silly saveTree     | +-- backo2@1.0.2
+428 silly saveTree     | +-- component-bind@1.0.0
+428 silly saveTree     | +-- component-emitter@1.3.0
+428 silly saveTree     | +-- debug@3.1.0
+428 silly saveTree     | +-- engine.io-client@3.5.2
+428 silly saveTree     | | +-- component-inherit@0.0.3
+428 silly saveTree     | | +-- debug@3.1.0
+428 silly saveTree     | | +-- has-cors@1.1.0
+428 silly saveTree     | | +-- indexof@0.0.1
+428 silly saveTree     | | +-- parseqs@0.0.6
+428 silly saveTree     | | +-- parseuri@0.0.6
+428 silly saveTree     | | +-- xmlhttprequest-ssl@1.6.3
+428 silly saveTree     | | `-- yeast@0.1.2
+428 silly saveTree     | +-- indexof@0.0.1
+428 silly saveTree     | +-- parseqs@0.0.6
+428 silly saveTree     | +-- parseuri@0.0.6
+428 silly saveTree     | +-- socket.io-parser@3.3.2
+428 silly saveTree     | `-- to-array@0.1.4
+428 silly saveTree     `-- socket.io-parser@3.4.1
+428 silly saveTree       +-- component-emitter@1.2.1
+428 silly saveTree       `-- debug@4.1.1
+428 silly saveTree         `-- ms@2.1.3
+429 verbose stack Error: speaker@0.3.1 install: `node-gyp rebuild`
+429 verbose stack Exit status 1
+429 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/index.js:332:16)
+429 verbose stack     at EventEmitter.emit (events.js:198:13)
+429 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/lib/spawn.js:55:14)
+429 verbose stack     at ChildProcess.emit (events.js:198:13)
+429 verbose stack     at maybeClose (internal/child_process.js:982:16)
+429 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:259:5)
+430 verbose pkgid speaker@0.3.1
+431 verbose cwd /data
+432 verbose Linux 4.19.0-10-amd64
+433 verbose argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--no-audit" "--no-update-notifier" "--no-fund" "--save" "--save-prefix=~" "--production" "node-red-contrib-audio@1.0.2"
+434 verbose node v10.24.1
+435 verbose npm  v6.14.12
+436 error code ELIFECYCLE
+437 error errno 1
+438 error speaker@0.3.1 install: `node-gyp rebuild`
+438 error Exit status 1
+439 error Failed at the speaker@0.3.1 install script.
+439 error This is probably not a problem with npm. There is likely additional logging output above.
+440 verbose exit [ 1, true ]
